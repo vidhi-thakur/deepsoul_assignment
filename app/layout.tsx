@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import TopMenubar from "@/components/nav/TopMenubar";
+import TopMenubar from "@/components/nav/TopMenubar";
 import BottomFooter from "@/components/nav/BottomFooter";
 
 const geistSans = Geist({
@@ -25,15 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"
-    // data-theme="dark"
-    >
+    <html lang="en" data-theme="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        {/* <TopMenubar /> */}
-        {children}
-        <BottomFooter />
+        <div className="min-h-screen bg-background dark:bg-background overflow-x-hidden">
+          <TopMenubar />
+          {children}
+          <BottomFooter />
+        </div>
       </body>
     </html>
   );
