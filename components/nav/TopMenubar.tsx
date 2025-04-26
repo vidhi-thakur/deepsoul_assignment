@@ -1,5 +1,9 @@
+"use client";
+
+import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import type { FC } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "#features", label: "Features" },
@@ -9,6 +13,17 @@ const navLinks = [
 ];
 
 const TopMenubar: FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+  const handleToggle = (): void => {
+    setIsDarkMode((val) => !val);
+  };
   return (
     <div className="w-full py-4 bg-background dark:bg-background border-b border-gray-300 backdrop-blur-md fixed top-0 z-50">
       <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-4">
@@ -25,6 +40,18 @@ const TopMenubar: FC = () => {
               {label}
             </Link>
           ))}
+          {/* add a button here */}
+          <button
+            onClick={handleToggle}
+            aria-label="Toggle Dark Mode"
+            className="rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-300 cursor-pointer dark:hover:bg-primary hover:bg-gray-300"
+          >
+            {isDarkMode ? (
+              <SunIcon className="h-6 w-6 text-yellow-400" />
+            ) : (
+              <MoonIcon className="h-6 w-6 text-content" />
+            )}
+          </button>
         </nav>
         <div
           className="md:hidden flex flex-col gap-1.5"
