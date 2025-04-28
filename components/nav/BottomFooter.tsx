@@ -52,8 +52,8 @@ const Sections = ({ sectionName, list, href }: Section) => (
 
 const BottomFooter = () => {
   return (
-    <footer className="bg-background dark:bg-background border-t border-gray-300 pt-12 pb-8">
-      <div className="w-full max-w-screen-xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-background dark:bg-background border-t border-gray-300 dark:border-primary pt-12 pb-8">
+      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <Link
             className="flex items-center mb-6 text-2xl text-primary font-bold"

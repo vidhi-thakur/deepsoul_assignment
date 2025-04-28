@@ -25,10 +25,12 @@ const TopMenubar: FC = () => {
     setIsDarkMode((val) => !val);
   };
   return (
-    <div className="w-full py-4 bg-background dark:bg-background border-b border-gray-300 backdrop-blur-md fixed top-0 z-50">
-      <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-4">
+    <header className="w-full py-4 bg-background dark:bg-background border-b border-gray-300 dark:border-primary backdrop-blur-md fixed top-0 z-1 shadow-sm">
+      <div className="w-full max-w-[1400px] mx-auto flex items-center justify-between px-4 md:px-6">
         <Link href="/">
-          <h1 className="text-primary font-bold text-lg">DeepSoul</h1>
+          <h1 className="text-primary text-lg md:text-2xl font-bold">
+            DeepSoul
+          </h1>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map(({ href, label }) => (
@@ -40,7 +42,6 @@ const TopMenubar: FC = () => {
               {label}
             </Link>
           ))}
-          {/* add a button here */}
           <button
             onClick={handleToggle}
             aria-label="Toggle Dark Mode"
@@ -54,7 +55,7 @@ const TopMenubar: FC = () => {
           </button>
         </nav>
         <div
-          className="md:hidden flex flex-col gap-1.5"
+          className="md:hidden flex flex-col gap-1.5 cursor-pointer"
           aria-label="Open menu"
           role="button"
           tabIndex={0}
@@ -64,7 +65,7 @@ const TopMenubar: FC = () => {
           <span className="block w-6 h-0.5 bg-gray-500 dark:bg-gray-100"></span>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
