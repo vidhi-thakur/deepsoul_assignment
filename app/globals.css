@@ -22,7 +22,7 @@
   :root {
     --text-heading: #f1f5f9;
     --text-content: rgb(148, 163, 184);
-    --background: rgba(2, 8, 23, 0.8);
+    --background: rgba(2, 8, 23);
   }
 }
 
@@ -30,7 +30,7 @@
 .dark {
   --text-heading: #f1f5f9;
   --text-content: rgb(148, 163, 184);
-  --background: rgba(2, 8, 23, 0.8);
+  --background: rgba(2, 8, 23);
 }
 
 body {
