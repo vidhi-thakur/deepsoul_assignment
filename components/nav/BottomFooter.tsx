@@ -21,12 +21,12 @@ const SECTIONS: Section[] = [
   {
     sectionName: "Resources",
     list: ["Articles", "Blogs", "Podcasts", "Audiobooks", "Research"],
-    href: "#therapy",
+    href: "#selfhelp",
   },
   {
     sectionName: "Company",
     list: ["About Us", "Our Team", "Careers", "Contact", "Privacy Policy"],
-    href: "#",
+    href: "#therapy",
   },
 ];
 
