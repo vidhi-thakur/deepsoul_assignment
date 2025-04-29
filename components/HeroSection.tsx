@@ -32,7 +32,7 @@ const HeroSection: FC = () => {
     <section className="bg-background dark:bg-background px-4 md:px-6">
       <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20 lg:px-6">
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading">
             Your journey to <span className="text-primary">inner peace</span>{" "}
             begins here
           </h1>

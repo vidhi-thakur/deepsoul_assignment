@@ -33,10 +33,10 @@ const FeaturesSection: FC = () => {
     <section className="bg-background dark:bg-background px-4 md:px-6">
       <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20 lg:px-6">
         <div className="text-center">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-heading text-balance">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-heading">
             Your Complete Mental Wellness Solution
           </h1>
-          <p className="text-xl text-content dark:text-content max-w-[800px] mx-auto mt-4">
+          <p className="text-lg text-content dark:text-content max-w-[800px] mx-auto mt-4">
             DeepSoul combines multiple approaches to provide comprehensive
             support for your mental wellbeing journey.
           </p>
