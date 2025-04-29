@@ -80,7 +80,7 @@ const TherapistCard: FC<TherapistCardProps> = ({
 
 const TherapySection: FC = () => {
   return (
-    <section className="bg-white dark:bg-background px-4 md:px-6">
+    <section className="bg-white dark:bg-background px-4 md:px-6" id="therapy">
       <div className="min-h-screen max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 py-20 lg:px-6">
         <div className="text-left">
           <span className="text-blue-500 bg-primary/10 inline-block px-4 py-3 rounded-full">

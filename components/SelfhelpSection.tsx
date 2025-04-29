@@ -73,6 +73,7 @@ const SelfhelpSection: FC = () => {
     <section
       className="bg-gradient-to-b from-lime-100 to-background dark:from-primary dark:to-background px-4 md:px-6"
       aria-labelledby="selfhelp-heading"
+      id="selfhelp"
     >
       <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col items-center gap-10 py-20 lg:px-6">
         <div className="text-center max-w-3xl">

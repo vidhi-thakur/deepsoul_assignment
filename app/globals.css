@@ -33,6 +33,10 @@
   --background: rgba(2, 8, 23);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;

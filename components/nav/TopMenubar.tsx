@@ -9,7 +9,6 @@ const navLinks = [
   { href: "#features", label: "Features" },
   { href: "#therapy", label: "Therapy" },
   { href: "#selfhelp", label: "Self help" },
-  { href: "#community", label: "Community" },
 ];
 
 const TopMenubar: FC = () => {

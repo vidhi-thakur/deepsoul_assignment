@@ -30,7 +30,10 @@ const cards = [
 
 const FeaturesSection: FC = () => {
   return (
-    <section className="bg-background dark:bg-background px-4 md:px-6">
+    <section
+      className="bg-background dark:bg-background px-4 md:px-6"
+      id="features"
+    >
       <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20 lg:px-6">
         <div className="text-center">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-heading">
