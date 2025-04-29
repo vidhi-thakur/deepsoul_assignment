@@ -1,6 +1,8 @@
-import FeaturesSection from "@/components/FeaturesSection";
+import { lazy } from "react";
 import HeroSection from "@/components/HeroSection";
-import TherapySection from "@/components/TherapySection";
+const FeaturesSection = lazy(() => import("@/components/FeaturesSection"));
+const SelfhelpSection = lazy(() => import("@/components/SelfhelpSection"));
+const TherapySection = lazy(() => import("@/components/TherapySection"));
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <TherapySection />
+      <SelfhelpSection />
     </main>
   );
 }

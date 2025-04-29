@@ -44,9 +44,7 @@ const features: FeatureItemProps[] = [
 
 const FeatureItem: FC<FeatureItemProps> = ({ icon, title, description }) => (
   <div className="flex items-start gap-4">
-    <div className="bg-content/15 dark:bg-content/15 p-2 rounded-full">
-      {icon}
-    </div>
+    <div className="bg-content/15 p-2 rounded-full">{icon}</div>
     <div>
       <h3 className="font-medium text-heading dark:text-heading">{title}</h3>
       <p className="text-sm text-content dark:text-content">{description}</p>
@@ -85,7 +83,7 @@ const TherapySection: FC = () => {
     <section className="bg-white dark:bg-background px-4 md:px-6">
       <div className="min-h-screen max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 py-20 lg:px-6">
         <div className="text-left">
-          <span className="text-primary bg-primary/10 inline-block px-4 py-3 rounded-full">
+          <span className="text-blue-500 bg-primary/10 inline-block px-4 py-3 rounded-full">
             Professional Support
           </span>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-heading mt-6">

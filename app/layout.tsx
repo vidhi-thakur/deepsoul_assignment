@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { lazy } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopMenubar from "@/components/nav/TopMenubar";
-import BottomFooter from "@/components/nav/BottomFooter";
+const BottomFooter = lazy(() => import("@/components/nav/BottomFooter"));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
