@@ -30,7 +30,7 @@ const cards = [
 
 const FeaturesSection: FC = () => {
   return (
-    <section className="bg-white dark:bg-background px-4 md:px-6">
+    <section className="bg-background dark:bg-background px-4 md:px-6">
       <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20 lg:px-6">
         <div className="text-center">
           <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-heading text-balance">
@@ -45,7 +45,7 @@ const FeaturesSection: FC = () => {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="bg-white dark:bg-slate-800/90 rounded-xl p-6 shadow-md border hover:shadow-lg transition-shadow animate-fade-in"
+              className="bg-white/90 dark:bg-slate-800/90 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow animate-fade-in"
               style={{ animationDelay: "0.1s" }}
             >
               <div className="mb-4">
