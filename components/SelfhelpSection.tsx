@@ -54,7 +54,6 @@ const MoodLevel = ({ label, color, isCurrent }: Mood) => (
       className={`${
         isCurrent ? "h-12 w-12 border-2 border-primary" : "h-10 w-10"
       } ${color} rounded-full mb-2`}
-      aria-label={`Mood level: ${label}`}
     />
     <span
       className={`text-xs ${
@@ -131,6 +130,10 @@ const SelfhelpSection: FC = () => {
                 <div
                   className="h-full w-3/5 bg-gradient-to-r from-primary/70 to-primary/90 rounded-full"
                   role="progressbar"
+                  aria-valuenow={60}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-label="Exercise completion"
                 ></div>
               </div>
               <div className="flex justify-between mt-2 text-sm text-slate-600 dark:text-slate-400">

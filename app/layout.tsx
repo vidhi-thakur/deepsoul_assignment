@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DeepSoul",
   description: "Your journey to inner peace begins here",
+  icons: {
+    icon: "/icon.jpg",
+  },
 };
 
 export default function RootLayout({
