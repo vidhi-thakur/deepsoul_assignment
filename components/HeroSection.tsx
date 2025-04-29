@@ -29,8 +29,8 @@ const cards = [
 
 const HeroSection: FC = () => {
   return (
-    <div className="bg-background dark:bg-background px-4 md:px-6">
-      <section className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20">
+    <section className="bg-background dark:bg-background px-4 md:px-6">
+      <div className="min-h-screen max-w-[1400px] mx-auto flex flex-col justify-center align-items-center gap-10 py-20 lg:px-6">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading text-balance">
             Your journey to <span className="text-primary">inner peace</span>{" "}
@@ -42,7 +42,7 @@ const HeroSection: FC = () => {
             journey.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
           {cards.map((card) => (
             <div
               key={card.title}
@@ -58,8 +58,8 @@ const HeroSection: FC = () => {
             </div>
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
