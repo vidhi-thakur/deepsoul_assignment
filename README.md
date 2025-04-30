@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DeepSoul – Mental Wellness Interface
 
-## Getting Started
+DeepSoul is a responsive, accessible web interface designed to promote mental wellness. Built with a modern tech stack and a calming, user-friendly aesthetic, the project emphasizes performance, accessibility, and thoughtful design.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** @heroicons/react/16/solid
+- **Deployment:** Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Implemented Components
 
-## Learn More
+### Mandatory Components:
 
-To learn more about Next.js, take a look at the following resources:
+- **Top Menu Bar:** Includes dark/light mode toggle, responsive layout
+- **Bottom Footer:** Clean, consistent footer with accessible links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Selected Components:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Hero Section**
+- **Features Section**
+- **Therapy Section**
+- **Self Help Section**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Responsiveness & Accessibility
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Fully responsive layout optimized for **web**, **tablet**, and **mobile**
+- **Light and dark mode** toggle with intuitive UX
+- **Semantic HTML** and accessibility considerations built-in
+- Uses **dynamic imports** to optimize performance and reduce load
+- Visually consistent with a **calming, modern UI**
+- Includes **smooth transitions** and subtle animations for enhanced experience
+
+---
+
+## 🔍 Areas for Future Improvement
+
+- Persist user preferences (e.g. dark mode) using localStorage or cookies
+- Refine motion using **Framer Motion** or similar animation libraries
+
+---
+
+## 🔗 Live Preview
+
+[👉 View the Live Site](https://deepsoul-assignment.vercel.app/)
