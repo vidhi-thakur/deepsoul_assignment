@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "DeepSoul",
   description: "Your journey to inner peace begins here",
   icons: {
-    icon: "/icon.jpg",
+    icon: "public/icon.jpg",
   },
 };
 
